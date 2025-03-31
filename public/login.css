@@ -96,8 +96,8 @@ header {
   color: gray;
 }
 
-
- .btn{
+.btn{
+  text-align: center;
   width: 18%;
   padding: 0.3rem 1.4rem;
   background: var(--main-color);
