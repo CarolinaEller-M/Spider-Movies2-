@@ -18,7 +18,9 @@ Breve descrição sobre seu projeto:catálogo de filmes é uma aplicação que p
 ## Print da versão responsiva com CSS puro
 
 <<  COLOQUE A IMAGEM AQUI >>
-
+![alt text](image.png)
 ## Print da versão responsiva com Bootstrap
 
 <<  COLOQUE A IMAGEM AQUI >>
+
+![alt text](image-1.png)
