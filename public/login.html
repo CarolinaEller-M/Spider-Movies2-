@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Movies</title>
     <link rel="stylesheet" href="login.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'rel="stylesheet">
-    <link rel="icon" href="files/img/favicon/favicon.ico" type="image/x-icon">
+    <title>Login</title>
 </head>
 <body>
-<header>
-    <a href="index.html" class="logo">
-        <i class='bx bx-camera-movie'></i> Spider Movies
-        </a>
-</header>
-<main>
-    <div class="login">
-        <h1>Login</h1>
-        <form action="" class="form">
-            <input type="email" class="email" placeholder="email ou número de celular" required>
-            <input type="password" class="password" placeholder="Senha" required>
-            <a href="login.html " target="_blank" class="btn">Entrar</a>
-            <p>ou</p>
-            <button type="submit" value="access" class="btn2">Usar um código de acesso</button>
-            <a href="https://workspace.google.com/intl/pt-BR/gmail/" class="social-login">
-                <i class='bx bxl-google'></i>
-            </a>
-            <a href="#" class="forgot-password">Esqueceu a senha ?</a>
-        </form>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_Mobile_encryption_re_yw3o-removebg-preview.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="login.html">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
     </div>
- </main>
-
- <footer>
-    <address>
-        <p>Spider Movies<br>
-            <a href="#" class="gmail">SpiderMovies@suport.com.br</a>
-    </address>
-    
-    <p>Siga-nos em:
-
-        <a href="https://www.facebook.com" target="_blank" class="social"><i class='bx bxl-facebook'></i>Facebook</a> |
-        <a href="https://www.twitter.com" target="_blank" class="social"><i class='bx bxl-twitter'></i>Twitter</a> |
-        <a href="https://www.instagram.com" target="_blank" class="social"><i class='bx bxl-instagram'></i>Instagram</a>
-    </p>
-</footer>
- </body>
+</body>
 </html>
