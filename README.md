@@ -9,10 +9,11 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Carolina Eller Marinho de Paula
+- Matricula:878827
+- Proposta de projeto escolhida: Catalago de filmes
+Breve descrição sobre seu projeto:catálogo de filmes é uma aplicação que permite aos usuários explorar, pesquisar e gerenciar uma coleção de filmes. Através de uma interface intuitiva, os usuários podem visualizar informações detalhadas sobre cada filme, como título, sinopse, elenco, gênero e ano de lançamento. Além disso, o catálogo pode incluir funcionalidades como a possibilidade de adicionar filmes à lista de favoritos, classificar e comentar sobre os filmes assistidos, e até mesmo filtrar por categorias específicas.
+- Breve descrição sobre seu projeto: o projeto Spider Movies é um site web de filmes que possui um menu de filmes de lançamentos pagina para login e em breve tera funcionalidade e possibilidade de adicionar filmes aos favoritos
 
 ## Print da versão responsiva com CSS puro
 
