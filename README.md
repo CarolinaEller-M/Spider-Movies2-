@@ -23,4 +23,4 @@ Breve descrição sobre seu projeto:catálogo de filmes é uma aplicação que p
 
 <<  COLOQUE A IMAGEM AQUI >>
 
-![alt text](image-1.png)
+![alt text](image-2.png)
