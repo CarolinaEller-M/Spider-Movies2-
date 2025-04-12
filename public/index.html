@@ -1,274 +1,419 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spider | Movies</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="files/img/favicon/favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
-        <a href="#" class="logo">
-            <i class='bx bx-camera-movie'></i> Spider Movies
-        </a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        
-        <ul class="navbar">
-            <li><a href="#home" class="home-active">Home</a></li>
-            <li><a href="#movies">Filmes</a></li>
-            <li><a href="#coming">Em breve</a></li>
-            <li><a href="#newsletter">CineMundo</a></li>
-        </ul>
-        <a href="login.html " target="_blank" class="btn">Entrar</a>
+
+<body id="body">
+    
+        <header id="header" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- Logo à esquerda -->
+            <a href="#" id="logo" class="navbar-brand me-0">
+                <i class='bx bxs-camera-movie'></i> Spider Movies
+            </a>
+
+            <!-- Botão do menu hamburguer -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu centralizado e botão à direita -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul id="navbar" class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#movies" class="nav-link">Filmes</a></li>
+                    <li class="nav-item"><a href="#coming" class="nav-link">Em breve</a></li>
+                    <li class="nav-item"><a href="#newsletter" class="nav-link">CineMundo</a></li>
+                </ul>
+
+                <!-- Botão Entrar à direita -->
+                <div class="d-flex">
+                    <a href="login.html" target="_blank" class="btn btn-primary">Entrar</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section class="home swiper" id="home">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide conatiner">
-                <img src="files/img/cards/home1.1.webp" alt="">
-                <div class="home-text">
-                    <span>Marvel Universe</span>
-                    <h1>Venom: Tempo de  <br> Carnificina</h1>
-                    <a href="Venom.html" target="_blank" class="btn">Assistir</a>
-                   
-                </div>
-               
-              </div>
-              
-              <div class="swiper-slide conatiner" >
-                <img src="files/img/cards/home2.webp" alt="">
-                <div class="home-text">
-                    <span>Marvel Universe</span>
-                    <h1>Vingadores: <br> Ultimato</h1>
-                    <a href="vingadores.html" target="_blank" class="btn">Assistir</a>
-                   
-                </div>
-                
-              </div>
-
-              <div class="swiper-slide conatiner" >
-                <img src="files/img/cards/home3.1.webp" alt="">
-                <div class="home-text">
-                    <span>Marvel Universe</span>
-                    <h1>Homem-Aranha: <br> De volta ao lar</h1>
-                    <a href="Spider.html" target="_blank" class="btn">Assistir</a>
-                </div>
-              </div>              
-        </section>
-<main>
-<section class="movies" id="movies">
-    <h2 class="heading">Laçamentos da Semana</h2>
-            <div class="movies-container">
-                    <div class="box">    
-                    <div class="box-img">
-                        <img src="files/img/cards/m1.jpg" alt="">
+    <section id="home">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="files/img/cards/home1.webp" class="d-block w-100" style="height: 80vh; object-fit: cover;"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-start" id="home-text">
+                        <span>Marvel Universe</span>
+                        <h1>Venom: Tempo de <br> Carnificina</h1>
+                        <a href="#" target="_blank" class="btn btn-primary">Assistir</a>
                     </div>
-                    <h3>Venom</h3>
-                    <span>120 min | Ação</span>
-                </div>            
-            
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m2.jpg" alt="">
                 </div>
-                <h3>Dunkerk</h3>
-                <span>120 min | Aventura</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m3.jpg" alt="">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="files/img/cards/home2.jpg" class="d-block w-100" style="height: 80vh; object-fit: cover;"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-start" id="home-text">
+                        <span>Tom Cruise</span>
+                        <h1>Top Gun <br> Maverick</h1>
+                        <a href="#" target="_blank" class="btn btn-primary">Assistir</a>
+                    </div>
                 </div>
-                <h3>Batman Vs Superman</h3>
-                <span>120 min | Hérois</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m4.jpg" alt="">
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="files/img/cards/home3.webp" class="d-block w-100" style="height: 80vh; object-fit: cover;"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-start" id="home-text">
+                        <span>Marvel Universe</span>
+                        <h1>Vingadores <br> Ultimato</h1>
+                        <a href="#" target="_blank" class="btn btn-primary">Assistir</a>
+                    </div>
                 </div>
-                <h3>John Wick 2</h3>
-                <span>120 min | Ação</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m5.jpg" alt="">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="files/img/cards/home4.jpg" class="d-block w-100" style="height: 80vh; object-fit: cover;"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-start" id="home-text">
+                        <span>Century Studios</span>
+                        <h1>Avatar <br> Caminho da água</h1>
+                        <a href="#" target="_blank" class="btn btn-primary">Assistir</a>
+                    </div>
                 </div>
-                <h3>Aquaman</h3>
-                <span>120 min | Hérois</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m6.jpg" alt="">
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="files/img/cards/home5.webp" class="d-block w-100" style="height: 80vh; object-fit: cover;"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block text-start" id="home-text">
+                        <span>Marvel Universe</span>
+                        <h1>Homem-Aranha <br> De volta ao Lar</h1>
+                        <a href="#" target="_blank" class="btn btn-primary">Assistir</a>
+                    </div>
                 </div>
-                <h3>Pantera Negra</h3>
-                <span>120 min | Hérois</span>
             </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m7.jpg" alt="">
-                </div>
-                <h3>Thor</h3>
-                <span>120 min | Hérois</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m8.png" alt="">
-                </div>
-                <h3>Bumblebee</h3>
-                <span>120 min | Ação</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m9.jpg" alt="">
-                </div>
-                <h3>Mortal Engines</h3>
-                <span>120 min | Ficcção Ciêntifica</span>
-            </div>
-
-            <div class="box">    
-                <div class="box-img">
-                    <img src="files/img/cards/m10.jpg" alt="">
-                </div>
-                <h3>UnderWorld Blood Wars</h3>
-                <span>120 min | Ação</span>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-</section>
+    </section>
 
-<section class="coming" id="coming">
-    <h2 class="heading">Em breve</h2>
-
-    <div class="coming-container swiper">
-       <div class="swiper-wrapper">
-           
-           <div class="swiper-slide box">
-               <div class="box-img">
-                   <img src="files/img/cards/coming1.jpg" alt="">
-               </div>
-               <h3>Johnny English</h3>
-               <span>120 min | Ação</span>
-           </div>
-                
-               
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming2.jpg" alt="">
-           </div>
-           <h3>Warcraft: O Primeiro Encontro de Dois Mundos</h3>
-           <span>120 min | Fantasia</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming3.jpg" alt="">
-           </div>
-           <h3>Rampage - Fora de Controle</h3>
-           <span>120 min | Aventura</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming4.jpg"alt="">
-           </div>
-           <h3>A Dama de Ferro</h3>
-           <span>120 min | Ação</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming5.jpg"alt="">
-           </div>
-           <h3>Liga da Justiça</h3>
-           <span>120 min | Hérois</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming6.jpeg"alt="">
-           </div>
-           <h3>Doutor Estranho</h3>
-           <span>120 min | Hérois</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming7.jpg" alt="">
-           </div>
-           <h3>Capitã Marvel</h3>
-           <span>120 min | Hérois</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming8.jpg" alt="">
-           </div>
-           <h3>Viúva Negra</h3>
-           <span>120 min | Hérois</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming9.jpg" alt="">
-           </div>
-           <h3>Homem-Formiga</h3>
-           <span>120 min | Hérois</span>
-               </div>
-           
-               <div class="swiper-slide box">
-           <div class="box-img">
-               <img src="files/img/cards/coming10.jpg" alt="">
-           </div>
-           <h3>Guardiões da Galaxia</h3>
-           <span>120 min | Hérois</span>
+    <main class="container mt-5">
+        <section id="movies" class="mb-5">
+            <h2 class="heading mb-4">Lançamentos da Semana</h2>
+            <div class="row g-4 mb-4">
+                <!-- Primeira linha com 5 filmes -->
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m1.jpg" alt="Venom">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Venom</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m1.jpg" alt="Venom">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Venom</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m2.jpg" alt="Dunkirk">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Dunkirk</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m3.jpg" alt="Batman vs Superman">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Batman vs Superman</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m4.jpg" alt="John Wick 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">John Wick 2</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m5.jpg" alt="Filme 5">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Filme 5</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            
-            <div class="swiper-slide box">
-                <div class="box-img">
-                    <img src="files/img/cards/coming11.jpg" alt="">
+            <div class="row g-4">
+                <!-- Segunda linha com 5 filmes -->
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m6.jpg" alt="Filme 6">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Filme 6</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Velozes e Furiosos 9</h3>
-                <span>120 min | Ação</span>
-                 </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m1.jpg" alt="Venom">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Venom</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m7.jpg" alt="Filme 7">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Filme 7</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m8.png" alt="Filme 8">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Filme 8</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m9.jpg" alt="Filme 9">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Filme 9</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="card h-100 bg-dark text-secondary border-0">
+                        <div class="img-container overflow-hidden rounded">
+                            <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                src="files/img/cards/m10.jpg" alt="Filme 10">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Filme 10</h5>
+                            <p class="card-text">120 min | ação</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coming" class="mb-5">
+            <h2 class="heading mb-4">Em breve</h2>
+            <div id="comingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <!-- Primeiro conjunto de 4 filmes -->
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming1.jpg" alt="Em breve 1">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 1</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming2.jpg" alt="Em breve 2">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 2</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming3.jpg" alt="Em breve 3">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 3</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming4.jpg" alt="Em breve 4">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 4</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <!-- Segundo conjunto de 4 filmes -->
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming5.jpg" alt="Em breve 5">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 5</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming6.jpeg" alt="Em breve 6">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 6</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming7.jpg" alt="Em breve 7">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 7</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card h-100 bg-dark text-secondary border-0">
+                                    <div class="img-container overflow-hidden rounded">
+                                        <img class="card-img-top w-100" style="height: 300px; object-fit: cover;"
+                                            src="files/img/cards/coming8.jpg" alt="Em breve 8">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Em breve 8</h5>
+                                        <p class="card-text">120 min | ação</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#comingCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#comingCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <section class="newsletter container py-5" id="newsletter">
+        <h2 class="heading text-center mb-4">CineMundo</h2>
+        <h2 class="text-center mb-4">Inscreva-se para receber as últimas notícias <br>
+            sobre filmes e séries</h2>
+        <form class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+            <input type="email" class="form-control" placeholder="Digite seu email" required style="max-width: 300px;">
+            <button type="submit" class="btn btn-primary">Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <address>
+                <p>Spider Movies<br>
+                    <a href="mailto:SpiderMovies@suport.com.br" class="text-secondary">SpiderMovies@suport.com.br</a>
+                </p>
+            </address>
+            <p class="mb-0">Siga-nos em:
+                <a href="https://www.facebook.com" target="_blank" class="text-white mx-2"><i
+                        class='bx bxl-facebook'></i> Facebook</a> |
+                <a href="https://www.twitter.com" target="_blank" class="text-white mx-2"><i class='bx bxl-twitter'></i>
+                    Twitter</a> |
+                <a href="https://www.instagram.com" target="_blank" class="text-white mx-2"><i
+                        class='bx bxl-instagram'></i> Instagram</a>
+            </p>
         </div>
-    </div>
-</section>
-
-<section class="newsletter" id="newsletter">
-    <h2 class="heading">CineMundo</h2>
-    <h2>Inscreva-se para receber as últimas notícias <br>
-        sobre filmes e séries</h2>
-    <form action="">
-        <input type="email" class="email" placeholder="Digite seu email" required>
-        <button type="submit" value="Subscribe" class="btn">Inscrever-se</button>
-    </form>
-</section>
-</main>    
-<footer>
-    <address>
-        <p>Spider Movies<br>
-            <a href="#" class="gmail">SpiderMovies@suport.com.br</a>
-    </address>
-    
-    <p>Siga-nos em:
-
-        <a href="https://www.facebook.com" target="_blank" class="social"><i class='bx bxl-facebook'></i>Facebook</a> |
-        <a href="https://www.twitter.com" target="_blank" class="social"><i class='bx bxl-twitter'></i>Twitter</a> |
-        <a href="https://www.instagram.com" target="_blank" class="social"><i class='bx bxl-instagram'></i>Instagram</a>
-    </p>
-</footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-
+    </footer>
 </body>
+
 </html>
